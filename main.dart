@@ -19,19 +19,15 @@ class _MyAppState extends State<MyApp> {
     return Scaffold(
       backgroundColor: Colors.blueAccent,
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          CurvedNavigationBar(
-            backgroundColor: Colors.blueAccent,
-            index: 1,
-            items: <Widget>[
-              Icon(Icons.add, size: 30),
-              Icon(Icons.list, size: 30),
-              Icon(Icons.compare_arrows, size: 30),
-            ],
-            onTap: (index) {
-              //Handle button tap
-            },
+          Container(
+            margin: const EdgeInsets.only(bottom: 12),
+            child: CurvedNavigationBar(
+              onTap: (index) {
+
+              },
+            ),
           ),
 
 
