@@ -4,11 +4,10 @@ import 'dart:ui' as ui;
 class NavCustomPainter extends CustomPainter {
   late double loc;
   late double s;
-  Color color;
   TextDirection textDirection;
 
   NavCustomPainter(
-      double startingLoc, int itemsLength, this.color, this.textDirection) {
+      double startingLoc, int itemsLength, this.textDirection) {
     final span = 1.0 / itemsLength;
     s = 0.2;
     double l = startingLoc + (span - s) / 2;
